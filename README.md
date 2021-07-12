@@ -15,6 +15,7 @@ These are utilites developed for my own research. I do not have the time to do e
 
 
 ————————
+
 numCN.py
 
 Utility module
@@ -42,12 +43,13 @@ rdateConvert(cdate) - converts Chinese dates to integers, but retains as reign y
 
 In development: convesion functions for weights and measures, currency
 
-###
+——————
+
 shiluSearch.py   
 
 A search utility for working with the shilu, creates a list of term matches, the surrounding text, and useful metadata (title, volume, line, date, etc)
 
-###
+——————
 
 Search for terms (including regex) in the Ming shilu
 
