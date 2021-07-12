@@ -25,20 +25,30 @@ Contains dictionaries and functions for processing Chinese numerals and dates in
 **Dictionaries**
 
 reignDict - reign period dictionary - base year is the year before the first year of reign, base year + year number gives year; currently Ming only
+
 numDict - dictionary of Chinese numerals, for converting to integers
+
 ganDict - dictionary of heavenly stems/tiangan/天干 for converting to integers 1-10
+
 zhiDIct - dictionary of earthly branches/dizhi/地支 for converting to integers 1-12
+
 gzDict - dictionary of full ganzhi/干支 hexidecimals for converting to integers 1-60
 
 **Conversion functions**
 -Note: for all conversion functions, it is best practice to test the format of input by checking if it is in respective dictionaries above
+
 -Better checks may be implimented in future version
 
 numConvert(cnum) - converts from Chinese numerals <10,000 (万/萬) to integers, takes a string (cnum), returns an integer
+
 wanConvert(cnum) - like numConvert(), but works on numerals < 100,000,000 (伊/億)
+
 bigConvert(cnum) - like numConvert(), but works on numerals < 10^16
+
 dateConvert(cdate) - converts Chinese dates from format reign period + year + month to western calendar + lunar month, takes a string (cdate), returns a string format year/month
+
 yearConvert(cdate) - same as dateConvert() but converts year only and returns as integer
+
 rdateConvert(cdate) - converts Chinese dates to integers, but retains as reign year and lunar month, retuned as string of format year/month
 
 In development: convesion functions for weights and measures, currency
