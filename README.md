@@ -14,14 +14,14 @@ Provided as-is.
 These are utilites developed for my own research. I do not have the time to do extensive support/debugging for other implimentations.
 
 
-###
+————————
 numCN.py
 
 Utility module
 Contains dictionaries and functions for processing Chinese numerals and dates into integers and western dates
-###
+————————
 
-#Dictionaries
+**Dictionaries**
 
 reignDict - reign period dictionary - base year is the year before the first year of reign, base year + year number gives year; currently Ming only
 numDict - dictionary of Chinese numerals, for converting to integers
@@ -29,7 +29,7 @@ ganDict - dictionary of heavenly stems/tiangan/天干 for converting to integers
 zhiDIct - dictionary of earthly branches/dizhi/地支 for converting to integers 1-12
 gzDict - dictionary of full ganzhi/干支 hexidecimals for converting to integers 1-60
 
-#Conversion functions
+**Conversion functions**
 -Note: for all conversion functions, it is best practice to test the format of input by checking if it is in respective dictionaries above
 -Better checks may be implimented in future version
 
