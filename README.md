@@ -64,22 +64,37 @@ A search utility for working with the shilu, creates a list of term matches, the
 Search for terms (including regex) in the Ming shilu
 
 Takes arguments on the command line as follows:
+
   first argument: search term - if not provided, promted on command line
+  
   second argument: output filename - if not provided, defaults to "output.csv"
+  
   third argument: input file directory path - if not provided, defaults to "./shilu/"
+  
   
  -Note: Minimal error checking on command line input.
 
 Outputs (to .csv):
+
  term (as found in text)
+ 
  line
+ 
  volume title
+ 
  volume number
+ 
  line in volume (not counting whitespace) - intended to help users of print volumes locate the entry
- line in file (counting whitespace) - intended to help users of this digital copy locate the entr
+ 
+ line in file (counting whitespace) - intended to help users of this digital copy locate the entry
+ 
  reignYear/lunarMonth
+ 
  ganzhiDay
+ 
  year (Gregorian calendar)
+ 
  filename
+ 
 
 -Note: Uses formatting to recognize structure - depends heavily on start of line (i.e. regex "^")
