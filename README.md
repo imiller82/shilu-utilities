@@ -76,25 +76,25 @@ Takes arguments on the command line as follows:
 
 Outputs (to .csv):
 
- term (as found in text)
+ +term (as found in text)
  
- line
+ +line
  
- volume title
+ +volume title
  
- volume number
+ +volume number
  
- line in volume (not counting whitespace) - intended to help users of print volumes locate the entry
+ +line in volume (not counting whitespace) - intended to help users of print volumes locate the entry
  
- line in file (counting whitespace) - intended to help users of this digital copy locate the entry
+ +line in file (counting whitespace) - intended to help users of this digital copy locate the entry
  
- reignYear/lunarMonth
+ +reignYear/lunarMonth
  
- ganzhiDay
+ +ganzhiDay
  
- year (Gregorian calendar)
+ +year (Gregorian calendar)
  
- filename
+ +filename
  
 
 -Note: Uses formatting to recognize structure - depends heavily on start of line (i.e. regex "^")
