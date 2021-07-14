@@ -205,6 +205,7 @@ for file in files:
 				entry = line
 				entry = entry.strip() #strip
 				entry = entry.strip("○△")
+				entry = entry.strip(gzRE)
 				fileout.write(titl + "," + str(vol) + "," + str(vln) + "," + str(ln) + "," + str(rdate) + ","  + ganzhi + "," + str(date) + "," + file + "," + term + "," + entry + "\r")
 		
 		#close input file
