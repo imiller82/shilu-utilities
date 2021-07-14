@@ -107,6 +107,11 @@ A search/split utility for working with the shilu, creates a list of term matche
 
 Works the same as shiluSearch, but splits the line around the search term. 
 
+Current version 0.10
+
+——————
+
+
 For example, given the line
 
 安南陈煓遣其通议大夫黎亚夫等来朝贡方物
@@ -121,6 +126,87 @@ i.e. search term, segment prior to search term, segment after search term
 
 For lines with multiple occurances of the same search term, it will break into more than two segments
 
+
+Takes arguments on the command line as follows:
+
+  first argument: search term - if not provided, promted on command line
+  
+  second argument: output filename - if not provided, defaults to "output.csv"
+  
+  third argument: input file directory path - if not provided, defaults to "./shilu/"
+  
+  
+ -Note: Minimal error checking on command line input.
+
+Outputs (to .csv):
+ 
+ +volume title
+ 
+ +volume number
+ 
+ +line in volume (not counting whitespace) - intended to help users of print volumes locate the entry
+ 
+ +line in file (counting whitespace) - intended to help users of this digital copy locate the entry
+ 
+ +reignYear/lunarMonth
+ 
+ +ganzhiDay
+ 
+ +year (Gregorian calendar)
+ 
+ +filename
+  
+ +term (as found in text)
+ 
+ +line segment before term
+ 
+ +line segment(s) after(between) terms
+ 
+ ——————
+
+doubleSearch
+
+A search utility for working with the shilu, creates a list of term matches, the surrounding text, and useful metadata (title, volume, line, date, etc)
+
+Works the same as shiluSearch, but if the first search term is found, searches for a second term in the line
+
 Current version 0.10
 
 ——————
+
+Takes arguments on the command line as follows:
+
+  first argument: manadatory search term - if not provided, promted on command line
+  
+  second argument: optional second search term - if not provided, promted on command line
+  
+  third argument: output filename - if not provided, defaults to "output.csv"
+  
+  fourth argument: input file directory path - if not provided, defaults to "./shilu/"
+  
+  
+ -Note: Minimal error checking on command line input.
+
+Outputs (to .csv):
+ 
+ +volume title
+ 
+ +volume number
+ 
+ +line in volume (not counting whitespace) - intended to help users of print volumes locate the entry
+ 
+ +line in file (counting whitespace) - intended to help users of this digital copy locate the entry
+ 
+ +reignYear/lunarMonth
+ 
+ +ganzhiDay
+ 
+ +year (Gregorian calendar)
+ 
+ +filename
+  
+ +first search term (as found in text)
+ 
+ +second search term (as found in text) or "none" if not found in that line
+ 
+ +line containing first search term
