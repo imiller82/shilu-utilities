@@ -9,7 +9,7 @@ Currently works only on Ming Shilu, intend to eventually extend to Qing Shilu, p
 
 Best used with included .txt files due to reliance on formatting.
 
-These are utilites developed for my own research. I do not have the time to do extensive support/debugging for other implimentations.
+These are utilites developed for my own research. I do not have the time to do extensive support/debugging.
 
 
 ————————
