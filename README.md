@@ -9,14 +9,12 @@ Currently works only on Ming Shilu, intend to eventually extend to Qing Shilu, p
 
 Best used with included .txt files due to reliance on formatting.
 
-Provided as-is. 
-
 These are utilites developed for my own research. I do not have the time to do extensive support/debugging for other implimentations.
 
 
 ————————
 
-numCN.py
+numCN
 
 Utility module
 Contains dictionaries and functions for processing Chinese numerals and dates into integers and western dates
@@ -55,9 +53,11 @@ In development: convesion functions for weights and measures, currency
 
 ——————
 
-shiluSearch.py   
+shiluSearch   
 
 A search utility for working with the shilu, creates a list of term matches, the surrounding text, and useful metadata (title, volume, line, date, etc)
+
+Current version 0.12
 
 ——————
 
@@ -75,10 +75,6 @@ Takes arguments on the command line as follows:
  -Note: Minimal error checking on command line input.
 
 Outputs (to .csv):
-
- +term (as found in text)
- 
- +line
  
  +volume title
  
@@ -95,6 +91,36 @@ Outputs (to .csv):
  +year (Gregorian calendar)
  
  +filename
+  
+ +term (as found in text)
+ 
+ +line containing term (as found in text)
  
 
 -Note: Uses formatting to recognize structure - depends heavily on start of line (i.e. regex "^")
+
+——————
+
+shiluSplit
+
+A search/split utility for working with the shilu, creates a list of term matches, the surrounding text, and useful metadata (title, volume, line, date, etc)
+
+Works the same as shiluSearch, but splits the line around the search term. 
+
+For example, given the line
+
+安南陈煓遣其通议大夫黎亚夫等来朝贡方物
+
+and the search term "朝贡"
+
+the splitter will break this into three terms: 
+
+朝贡,安南陈煓遣其通议大夫黎亚夫等来,方物 
+
+i.e. search term, segment prior to search term, segment after search term
+
+For lines with multiple occurances of the same search term, it will break into more than two segments
+
+Current version 0.10
+
+——————
