@@ -166,6 +166,8 @@ Outputs (to .csv):
 
 doubleSearch
 
+NOT WORKING AT PRESENT
+
 A search utility for working with the shilu, creates a list of term matches, the surrounding text, and useful metadata (title, volume, line, date, etc)
 
 Works the same as shiluSearch, but if the first search term is found, searches for a second term in the line
