@@ -107,7 +107,7 @@ A search/split utility for working with the shilu, creates a list of term matche
 
 Works the same as shiluSearch, but splits the line around the search term. 
 
-Current version 0.10
+Current version 0.11
 
 ——————
 
